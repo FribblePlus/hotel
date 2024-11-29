@@ -1,0 +1,334 @@
+/* Root styles */
+.root {
+    -fx-background-color: #ffffff;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Sidebar styles */
+.sidebar {
+    -fx-background-color: #f9fafb;
+    -fx-border-color: #e5e7eb;
+    -fx-border-width: 0 1 0 0;
+    -fx-min-width: 250;
+    -fx-pref-width: 250;
+    -fx-max-width: 250;
+}
+
+.sidebar-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #374151;
+    -fx-font-size: 14px;
+    -fx-alignment: center-left;
+    -fx-padding: 10 15;
+    -fx-background-radius: 6;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: #f3f4f6;
+}
+
+.sidebar-button:pressed {
+    -fx-background-color: #e5e7eb;
+}
+
+/* Main content styles */
+.main-content {
+    -fx-background-color: white;
+}
+
+.welcome-label {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 20 0;
+    -fx-border-color: #e5e7eb;
+    -fx-border-width: 0 0 1 0;
+}
+
+/* Button styles */
+.shadcn-button {
+    -fx-background-color: #000000;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 16;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 2, 0, 0, 1);
+}
+
+.shadcn-button:hover {
+    -fx-background-color: #333333;
+}
+
+.shadcn-button:pressed {
+    -fx-background-color: #666666;
+}
+
+/* Room styles */
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.room-card {
+    -fx-background-color: white;
+    -fx-border-color: #e5e7eb;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 4, 0, 0, 1);
+    -fx-padding: 16;
+    -fx-pref-width: 300;
+    -fx-max-width: 300;
+}
+
+.room-card-image {
+    -fx-background-radius: 8 8 0 0;
+    -fx-pref-width: 280;
+    -fx-pref-height: 180;
+}
+
+.room-card-title {
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+}
+
+.room-card-info {
+    -fx-font-size: 14;
+    -fx-text-fill: #6b7280;
+}
+
+.room-card-price {
+    -fx-font-size: 14;
+    -fx-text-fill: #6b7280;
+}
+
+.room-card-button {
+    -fx-background-color: #000000;
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16;
+    -fx-background-radius: 4;
+    -fx-cursor: hand;
+}
+
+.room-card-button:hover {
+    -fx-background-color: #333333;
+}
+
+.room-card-button:pressed {
+    -fx-background-color: #666666;
+}
+
+/* Combo box styles */
+.combo-box {
+    -fx-font-size: 12px;
+    -fx-font-family: "Inter", sans-serif;
+    -fx-text-fill: #111827;
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E5E7EB;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-border-width: 1.5;
+    -fx-padding: 8 12;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 2, 0.2, 0, 1);
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.combo-box .arrow {
+    -fx-background-color: #9CA3AF;
+    -fx-shape: "M 0 0 L 6 6 L 12 0 Z";
+    -fx-scale-x: 0.8;
+    -fx-scale-y: 0.8;
+}
+
+.combo-box:hover .arrow {
+    -fx-background-color: #666666;
+}
+
+.combo-box:hover {
+    -fx-border-color: #666666;
+    -fx-effect: dropshadow(gaussian, rgba(165, 180, 252, 0.3), 4, 0.3, 0, 2);
+}
+
+.combo-box:focused {
+    -fx-border-color: #666666;
+    -fx-effect: dropshadow(gaussian, rgba(79, 70, 229, 0.5), 4, 0.3, 0, 2);
+}
+
+.combo-box:disabled {
+    -fx-opacity: 0.5;
+}
+
+.combo-box-popup {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E5E7EB;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 4, 0.2, 0, 2);
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #FFFFFF;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.combo-box-popup .list-cell {
+    -fx-font-family: "Inter", sans-serif;
+    -fx-font-size: 12px;
+    -fx-text-fill: #111827;
+    -fx-background-color: transparent;
+    -fx-padding: 8 12;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #f3f4f6;
+    -fx-text-fill: black;
+}
+
+/* Date picker styles */
+/* Style for the entire DatePicker */
+.date-picker {
+    -fx-font-family: 'Inter', sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: #f9fafb;
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 6px;
+}
+
+/* Focused state */
+.date-picker:focused {
+    -fx-border-color: #3b82f6;
+    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(59, 130, 246, 0.3), 4, 0.5, 0, 2);
+}
+
+/* Placeholder text (prompt) */
+.date-picker .text {
+    -fx-fill: #6b7280;
+}
+
+/* Hover effect */
+.date-picker:hover {
+    -fx-border-color: #9ca3af;
+}
+
+/* Calendar popup styling */
+.date-picker-popup {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e5e7eb;
+    -fx-border-radius: 8px;
+    -fx-padding: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 8, 0.5, 0, 4);
+}
+
+/* DateCell styling */
+.date-cell {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #1f2937;
+    -fx-font-size: 12px;
+    -fx-border-radius: 4px;
+}
+
+.date-cell:hover {
+    -fx-background-color: #e5e7eb;
+}
+
+.date-cell:selected {
+    -fx-background-color: #3b82f6;
+    -fx-text-fill: #ffffff;
+}
+
+/* Header (Month and Year) */
+.date-picker .month-year-label {
+    -fx-text-fill: #111827;
+    -fx-font-weight: bold;
+}
+
+/* Navigation arrows */
+.date-picker .button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #6b7280;
+}
+
+.date-picker .button:hover {
+    -fx-background-color: #f3f4f6;
+    -fx-text-fill: #374151;
+}
+
+
+/* Cancel button styles */
+.cancel-button {
+    -fx-background-color: #ef4444;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 16;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 2, 0, 0, 1);
+}
+
+.cancel-button:hover {
+    -fx-background-color: #dc2626;
+}
+
+.cancel-button:pressed {
+    -fx-background-color: #b91c1c;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 1, 0, 0, 1);
+}
+
+.cancel-button:disabled {
+    -fx-background-color: #f87171;
+    -fx-text-fill: #ffffff;
+    -fx-opacity: 0.7;
+}
+
+/* Account section styles */
+.account-section {
+    -fx-background-color: #f4f4f5;
+    -fx-padding: 12;
+    -fx-background-radius: 8;
+    -fx-border-color: #e4e4e7;
+    -fx-border-radius: 8;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 2, 0, 0, 1);
+}
+
+.account-name {
+    -fx-font-weight: bold;
+    -fx-text-fill: #18181b;
+    -fx-font-size: 14px;
+}
+
+.account-email {
+    -fx-font-size: 12px;
+    -fx-text-fill: #71717a;
+}
+
+.input {
+    -fx-background-color: #f3f3f3;
+    -fx-padding: 10;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-border-color: #ddd;
+    -fx-prompt-text-fill: #aaa;
+    -fx-text-fill: #333;
+}
+
+.input:hover {
+    -fx-border-color: #333;
+}
+
+.input:focused {
+    -fx-border-color: #000;
+    -fx-background-color: #ffffff;
+}

@@ -1,0 +1,122 @@
+.leftside{
+    -fx-background-color:#000000;
+}
+.loginbutton {
+    -fx-padding: 6px 12px;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 16px;
+    -fx-font-weight: 500;
+    -fx-text-fill: #18181b;
+    -fx-background-color: #f4f4f5;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0, 0, 2);
+}
+.backbutton{
+    -fx-padding: 6px 12px;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 16px;
+    -fx-font-weight: 500;
+    -fx-text-fill: #000000;
+    -fx-background-color: #666666;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 4, 0, 0, 2);
+}
+
+.loginbutton:hover {
+    -fx-background-color: #ffffff;
+}
+
+.loginbutton:pressed {
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+.root {
+    -fx-font-family: 'Arial';
+    -fx-padding: 20;
+}
+
+.label-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000;
+    -fx-padding: 10 0 10 0;
+}
+
+.label-subtitle {
+    -fx-font-size: 14px;
+    -fx-text-fill: #777;
+}
+
+.text-field {
+    -fx-background-color: #f3f3f3;
+    -fx-padding: 10;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-border-color: #ddd;
+    -fx-prompt-text-fill: #aaa;
+    -fx-text-fill: #333;
+}
+
+.text-field:hover {
+    -fx-border-color: #333;
+}
+
+.text-field:focused {
+    -fx-border-color: #000;
+    -fx-background-color: #ffffff;
+}
+
+.button {
+    -fx-background-color: #000;
+    -fx-text-fill: #fff;
+    -fx-padding: 10 20;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+    -fx-background-color: #333;
+}
+
+.button:pressed {
+    -fx-background-color: #555;
+}
+
+.github-button {
+    -fx-background-color: #f3f3f3;
+    -fx-border-color: #ddd;
+    -fx-border-width: 1;
+    -fx-text-fill: #000;
+    -fx-padding: 10 20;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.github-button:hover {
+    -fx-background-color: #e6e6e6;
+}
+
+.github-button:pressed {
+    -fx-background-color: #ccc;
+}
+
+.footer-text {
+    -fx-text-fill: #777;
+    -fx-font-size: 12px;
+}
+
+.footer-text .link {
+    -fx-text-fill: #000;
+    -fx-underline: true;
+}
+
+.footer-text .link:hover {
+    -fx-text-fill: #333;
+}

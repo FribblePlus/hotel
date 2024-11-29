@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="800.0" maxWidth="1000.0" minHeight="800.0" minWidth="1000.0" prefHeight="800.0" prefWidth="1000.0" stylesheets="@../styles/loginDesign.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.plaza.hotelmanagement.controllers.LoginController">
+   <children>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+         <children>
+            <AnchorPane layoutX="-22.8" prefHeight="760.0" prefWidth="480.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="rg" layoutX="52.0" layoutY="47.0" mnemonicParsing="false" onAction="#switchForm" styleClass="loginbutton" text="Register" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0" />
+                  <Text layoutX="110.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-title" text="Log in to your account" />
+                  <Text layoutX="57.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-subtitle" text="Enter your email address and password below to log in to your account" textAlignment="CENTER" wrappingWidth="365.0208740234375" />
+                  <TextField fx:id="lg_email" layoutX="90.0" layoutY="350.0" prefHeight="38.0" prefWidth="296.0" promptText="email" styleClass="text-field" />
+                  <Button fx:id="lg_button" layoutX="88.0" layoutY="445.0" mnemonicParsing="false" onMouseClicked="#login" prefHeight="38.0" prefWidth="296.0" text="Log in" />
+                  <TextField fx:id="lg_pass" layoutX="89.0" layoutY="397.0" prefHeight="38.0" prefWidth="296.0" promptText="password" styleClass="text-field" />
+                  <Text fx:id="invalid" fill="RED" layoutX="169.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invalid email or password" textAlignment="CENTER" visible="false" />
+                  <Button layoutX="163.0" layoutY="50.0" mnemonicParsing="false" onAction="#backToMain" text="Back" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="487.4" layoutY="0.8" prefHeight="760.0" prefWidth="480.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="lgn" layoutX="347.20000000000005" layoutY="50.2" mnemonicParsing="false" onAction="#switchForm" styleClass="loginbutton" text="Login" AnchorPane.rightAnchor="50.39999999999998" AnchorPane.topAnchor="50.2" />
+                  <Text layoutX="136.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-title" text="Create an account" />
+                  <Text layoutX="96.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-subtitle" text="Enter your email below to create your account" />
+                  <TextField fx:id="rg_email" layoutX="92.0" layoutY="371.0" prefHeight="38.0" prefWidth="296.0" promptText="email" styleClass="text-field" />
+                  <Button fx:id="rg_button" layoutX="93.0" layoutY="515.0" mnemonicParsing="false" onMouseClicked="#register" prefHeight="38.0" prefWidth="296.0" text="Create account" />
+                  <TextField fx:id="rg_pass" layoutX="92.0" layoutY="418.0" prefHeight="38.0" prefWidth="296.0" promptText="password" styleClass="text-field" />
+                  <TextField fx:id="rg_repass" layoutX="93.0" layoutY="466.0" prefHeight="38.0" prefWidth="296.0" promptText="re-enter password" styleClass="text-field" />
+                  <Text fx:id="rg_error" fill="RED" layoutX="165.0" layoutY="580.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-subtitle" text="Username already exist" textAlignment="CENTER" visible="false">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="rg_success" fill="#20ff00" layoutX="175.0" layoutY="580.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-subtitle" text="Username already exist" textAlignment="CENTER" visible="false">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="259.0" layoutY="50.0" mnemonicParsing="false" onAction="#backToMain" text="Back" />
+                  <TextField fx:id="rg_name" layoutX="93.0" layoutY="324.0" prefHeight="38.0" prefWidth="296.0" promptText="full name" styleClass="text-field" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="side_form" disable="true" layoutX="0.19999999999999996" prefHeight="760.0" prefWidth="480.0" styleClass="leftside" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.19999999999999996" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView blendMode="DIFFERENCE" fitHeight="136.0" fitWidth="314.0" layoutX="119.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true" smooth="false" AnchorPane.topAnchor="87.0">
+                     <image>
+                        <Image url="@../img/plazablack.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" contrast="-1.0" hue="1.0" saturation="-1.0" />
+                     </effect>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="97.0" layoutY="669.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Timelessly elegant and extremely spacious, The Plaza’s rooms and suites offer striking beauty and luxury." textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="286.7457275390625" AnchorPane.bottomAnchor="65.0634765625">
+                     <font>
+                        <Font name="Segoe UI" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
